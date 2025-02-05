@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+
+   <!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <h1 class="logo">
+      <span>K</span><span>i</span><span>r</span><span>a</span><span>n</span>&nbsp;&nbsp;
+      <span>K</span><span>h</span><span>a</span><span>n</span><span>d</span><span>a</span><span>l</span><span>e</span>
+    </h1>
+    
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <section id="about">
+      <div class="about-image">
+        <img src="profile.jpg" alt="Your Image" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="typewriter">
+          I am proficient in programming languages such as C, C++, Core-Java, SQL, HTML, and CSS, I have honed my skills through various academic projects and real-world applications. Complementing my academic achievements, I hold certifications in C and C++ from Maharashtra Technical & Self Employment Training Society (MTSTS). My goal is to thrive and contribute in a professional environment that fosters growth and success, utilizing my skills and knowledge effectively.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box" data-skill="HTML">
+          <img src="html.jpg" alt="HTML" />
+        </div>
+        <div class="skill-box" data-skill="CSS">
+          <img src="css.jpg" alt="CSS" />
+        </div>
+        <div class="skill-box" data-skill="JavaScript">
+          <img src="javascript.jpg" alt="JavaScript" />
+        </div>
+        <div class="skill-box" data-skill="React">
+          <img src="react.jpg" alt="React" />
+        </div>
+        <div class="skill-box" data-skill="Java">
+          <img src="java.jpg" alt="Java" />
+        </div>
+        <div class="skill-box" data-skill="Servlet">
+          <img src="servlet.jpg" alt="Servlet" />
+        </div>
+        <div class="skill-box" data-skill="Spring-Boot">
+          <img src="springboot.jpg" alt="Spring-Boot" />
+        </div>
+        <div class="skill-box" data-skill="SQL">
+          <img src="sql.jpg" alt="SQL" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+   <section id="education">
+  <h2>My Educational Journey</h2>
+  <div class="card-container">
+    <div class="ecard" onclick="flipCard(this)">
+      <div class="face front">
+        <h3><i class="fas fa-laptop-code"></i> Computer Engineering (B.E)</h3>
+      </div>
+      <div class="face back">
+        <p><strong></strong> RAJGAD DNYANPEETH TECHNICAL CAMPUS, PUNE</p>
+        <p><strong>MARKS:</strong> 7.99 CGPA</p>
+        <p><strong>YEAR:</strong> 2023</p>
+      </div>
+    </div>
+
+    <div class="ecard" onclick="flipCard(this)">
+      <div class="face front">
+        <h3><i class="fas fa-book-reader"></i> 12th (H.S.C)</h3>
+      </div>
+      <div class="face back">
+        <p><strong></strong>SHRI CHHATRAPATI SHIVAJI JUNIOR COLLEGE, BHOR, PUNE</p>
+        <p><strong>MARKS:</strong> 71%</p>
+        <p><strong>YEAR:</strong> 2019</p>
+      </div>
+    </div>
+
+    <div class="ecard" onclick="flipCard(this)">
+      <div class="face front">
+        <h3><i class="fas fa-graduation-cap"></i> 10th (S.S.C)</h3>
+      </div>
+      <div class="face back">
+        <p><strong></strong> SHRI CHHATRAPATI SHIVAJI HIGHSCHOOL, BHOR, PUNE</p>
+        <p><strong>MARKS:</strong> 88%</p>
+        <p><strong>YEAR:</strong> 2017</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <div class="certifications">
+        <h2>Professional Certifications</h2>
+        <!-- Certification 1 -->
+        <div class="certification-item">
+          <h3>
+            <i class="fas fa-code-branch"></i> Java Full Stack Web Development
+          </h3>
+          <p><strong>Institute:</strong> Giri's Tech Hub</p>
+          <p><strong>Year:</strong> 2023</p>
+          <p>
+            <strong>Description:</strong> Mastered full-stack development using
+            Java, Spring Boot, and ReactJS. Hands-on experience in building
+            scalable and dynamic web applications.
+          </p>
+        </div>
+        <!-- Certification 2 -->
+        <div class="certification-item">
+          <h3><i class="fas fa-cogs"></i> C and C++ Certification</h3>
+          <p><strong>Institute:</strong> Suyog Institute of Technology</p>
+          <p><strong>Year:</strong> 2022</p>
+          <p>
+            <strong>Description:</strong> Gained deep knowledge in C and C++,
+            focusing on data structures, algorithms, and system-level
+            programming.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects"  id="projects" >
+      <h2>PROJECTS</h2>
+      <div class="container">
+        <!-- Project 1 -->
+        <div class="project" id="project1">
+          <h3>Face Recognition based Door Lock</h3>
+          <p>
+            Establish a robust backend infrastructure for seamless Telegram-MySQL integration, enabling a customized authentication bot for token distribution. Utilize flags to execute SQL queries efficiently. Manage complex image processing, converting images to binary format and storing them as blobs in the database. Employ a diverse range of libraries and tools like mysql.connector, telegram.ext, requests, cv2, and PIL for database connectivity, bot development, HTTP request management, image manipulation, and more, including advanced facial recognition capabilities.
+          </p>
+          <a
+            href="https://github.com/yourusername/portfolio"
+            target="_blank"
+            class="btn github-btn"
+            >View on GitHub</a
+          >
+          <button class="view-details-btn">View Details</button>
+          <!-- Button to trigger popup -->
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project" id="project2">
+          <h3>Restaurant Billing Web (Live Project)</h3>
+          <p>
+            It is a web application developed using JSP, Servlet, JS, HTML, CSS, Bootstrap, JDBC to connect to a database. It helps maintain collections, take orders, generate bills, show table availability, and export data to Excel format. Graphical representations of collections make data easier to understand. The application also includes user authentication for secure access. It also includes user authentication to ensure secure access and prevent unauthorized usage. It is designed with a user-friendly interface, making it easy for staff to manage operations efficiently.
+          </p>
+          <a
+            href="https://github.com/yourusername/e-commerce"
+            target="_blank"
+            class="btn github-btn"
+            >View on GitHub</a
+          >
+          <button class="view-details-btn">View Details</button>
+          <!-- Button to trigger popup -->
+        </div>
+      </div>
+
+      <!-- Popup Modal (Hidden by default) -->
+      <div class="overlay"></div>
+      <div class="popup">
+        <h3>Project Title</h3>
+        <p>Project details will be displayed here.</p>
+        <button class="close-btn">Close</button>
+      </div>
+    </section>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <footer id="footer">
+      <div class="contact-info">
+        <h1>Get in Touch</h1>
+        <p>
+            Let's build something amazing together! Feel free to reach out. I'm always open to new ideas, collaborations, and opportunities.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/its_kiran_khandale/"><img src="icon1.jpg" alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/in/kiran-khandale-2172b31b2/"><img src="icon2.jpg" alt="LinkedIn" /></a>
+          <a href="#"><img src="icon3.jpg" alt="Pinterest" /></a>
+          <a href="#index.html"><img src="icon4.webp" alt="Twitter" /></a>
+        </div>
+      </div>
+      <div class="contact-cards">
+        <div class="card">
+          <img src="contactcard1.jpg.webp" alt="Dribbble" />
+        </div>
+        <div class="card">
+          <img src="contactcard2.webp" alt="Email" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.querySelector(".typewriter");
+        const text = textElement.textContent.trim(); // Get full text
+        const words = text.split(" "); // Split into words
+        textElement.textContent = ""; // Clear initial text
+
+        let i = 0;
+        function typeWords() {
+          if (i < words.length) {
+            textElement.textContent += words[i] + " ";
+            i++;
+            setTimeout(typeWords, 20); // Adjust speed (300ms per word)
+          } else {
+            textElement.classList.remove("border-right"); // Remove cursor effect after typing
+          }
+        }
+
+        typeWords(); // Start typing effect
+      });
+
+
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const viewDetailsBtns = document.querySelectorAll(".view-details-btn");
+        const popup = document.querySelector(".popup");
+        const overlay = document.querySelector(".overlay");
+        const closeBtn = document.querySelector(".close-btn");
+        const popupTitle = popup.querySelector("h3");
+        const popupText = popup.querySelector("p");
+
+        // For each "View Details" button
+        viewDetailsBtns.forEach((button) => {
+          button.addEventListener("click", function () {
+            const project = this.closest(".project"); // Get the parent project
+            const title = project.querySelector("h3").textContent;
+            const description = project.querySelector("p").textContent;
+
+            // Set the popup title and description
+            popupTitle.textContent = title;
+            popupText.textContent = description;
+
+            // Show the popup and overlay
+            popup.style.display = "block";
+            overlay.style.display = "block";
+          });
+        });
+
+        // Close the popup when the close button or overlay is clicked
+        closeBtn.addEventListener("click", function () {
+          popup.style.display = "none";
+          overlay.style.display = "none";
+        });
+
+        overlay.addEventListener("click", function () {
+          popup.style.display = "none";
+          overlay.style.display = "none";
+        });
+      });
+
+
+
+
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggleBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    });
+
+
+
+
+
+
+    function flipCard(card) {
+  // Remove the 'flipped' class from all cards
+  const allCards = document.querySelectorAll('.ecard');
+  allCards.forEach(c => {
+    if (c !== card) {
+      c.classList.remove('flipped');
+    }
+  });
+
+  // Toggle the 'flipped' class on the clicked card
+  card.classList.toggle('flipped');
+}
+
+
+    </script>
+  </body>
+</html>

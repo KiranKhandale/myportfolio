@@ -936,6 +936,7 @@ footer p {
   footer{
     display: block;
     height: 10px;
+    background-color: #0a0a0a;
   }
   footer h1 {
     font-size: 2em;

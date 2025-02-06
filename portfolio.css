@@ -210,6 +210,7 @@ body {
   border-right: 3px solid #ddd;
   animation: blink 0.6s infinite;
   text-align:justify;
+  word-spacing: -2px;
 }
 
 /* JavaScript-powered animation will handle word-by-word effect */
@@ -638,6 +639,7 @@ i {
   color: #ddd;
   text-align: justify;
   line-height: 1.5;
+  word-spacing: -2px;
 }
 
 /* Project Section Button - GitHub */

@@ -978,12 +978,7 @@ footer p {
   }
 
   .contact-cards {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .card {
-    width: 80px;
+    visibility: hidden;
   }
 }
 

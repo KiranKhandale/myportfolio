@@ -965,6 +965,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  footer{
+    display: block;
+  }
   footer h1 {
     font-size: 2em;
   }

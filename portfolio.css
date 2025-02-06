@@ -971,8 +971,17 @@ footer p {
     font-size: 1em;
   }
 
+  .contact-info {
+    text-align: justify;
+  }
+
+  .contact-cards {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .card {
-    width: 150px;
+    width: 80px;
   }
 }
 
